@@ -29,7 +29,7 @@ async def gstart(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "💬 Support Chat", url=f"https://t.me/{SUPPORT_GROUP}"
+                        "💬 Support Chat", url=f"https://t.me/{Pigasus_Support}"
                     )
                 ],    
                 [    
@@ -78,9 +78,8 @@ def map(pos):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
             [InlineKeyboardButton("➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '👥 Group', url=f"https://t.me/{SUPPORT_GROUP}"),
-             InlineKeyboardButton(text = 'Channel 📢', url=f"https://t.me/{UPDATES_CHANNEL}")],
-            [InlineKeyboardButton(text = '🔥 Source Code 🔥', url=f"https://{SOURCE_CODE}")],
+            [InlineKeyboardButton(text = '👥 Group', url=f"https://t.me/{PigasusSupport}"),
+             InlineKeyboardButton(text = 'Channel 📢', url=f"https://t.me/{PigasusUpdates}")
             [InlineKeyboardButton(text = '◀️ Back', callback_data = f"help+{pos-1}")]
         ]
     else:

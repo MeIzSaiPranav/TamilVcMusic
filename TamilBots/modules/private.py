@@ -80,16 +80,7 @@ def map(pos):
             [InlineKeyboardButton("➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
             [InlineKeyboardButton(text = '👥 Group', url=f"https://t.me/{PigasusSupport}"),
              InlineKeyboardButton(text = 'Channel 📢', url=f"https://t.me/{PigasusUpdates}")
-            [InlineKeyboardButton(text = '◀️ Back', callback_data = f"help+{pos-1}")]
-        ]
-    else:
-        button = [
-            [
-                InlineKeyboardButton(text = '◀️ Back', callback_data = f"help+{pos-1}"),
-                InlineKeyboardButton(text = 'Next ▶️', callback_data = f"help+{pos+1}")
-            ],
-        ]
-    return button
+            
 
 @Client.on_message(filters.command(["help","helpvc"]) & ~filters.private & ~filters.channel)
 async def ghelp(_, message: Message):

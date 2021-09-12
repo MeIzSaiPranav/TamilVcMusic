@@ -77,7 +77,7 @@ def map(pos):
     elif(pos==len(tr.HELP_MSG)-1):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
-            [InlineKeyboardButton("➕ Add me to your Group ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+            [InlineKeyboardButton("➕ Add me to your Group ➕", url=f"https://t.me/{AshXMusicRobot}?startgroup=true")],
             [InlineKeyboardButton(text = '👥 Group', url=f"https://t.me/{PigasusSupport}"),
              InlineKeyboardButton(text = 'Channel 📢', url=f"https://t.me/{PigasusUpdates}")
            ]
